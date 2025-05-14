@@ -14,7 +14,7 @@ interface Receita {
     }
 }
 
-let receitas: Receita[] = [
+const receitas: Receita[] = [
     {
         id: 'bolo-de-cenoura',
         imagem: '/bolo-de-cenoura.jpg',
