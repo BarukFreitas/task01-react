@@ -38,8 +38,8 @@ export default function Dicas() {
 
         <section className="mb-8">
           <h2 className="text-xl font-semibold text-gray-800 mb-2">Medidas e Conversões</h2>
-          <p className="text-gray-700 mb-2">Lembre-se que 1 xícara de farinha de trigo geralmente pesa cerca de &quot;120 gramas&quot;.</p>
-          <p className="text-gray-700 mb-2">Para converter graus Celsius para Fahrenheit, use a fórmula: &deg;F = (&deg;C × 9/5) + 32.</p>
+          <p className="text-gray-700 mb-2">Lembre-se que 1 xícara de farinha de trigo geralmente pesa cerca de 120 gramas.</p>
+          <p className="text-gray-700 mb-2">Para converter graus Celsius para Fahrenheit, use a fórmula: F = (C × 9/5) + 32.</p>
         </section>
         </main>
         <Footer/>
