@@ -1,15 +1,27 @@
 import Link from "next/link";
 import React from "react";
+import TextMenu from "../textMenu/TextMenu";
+
+import {
+    FaHome,
+    FaInfoCircle,
+    FaConciergeBell,
+    FaEnvelope,
+  } from "react-icons/fa";
+
+import { MdCollections } from "react-icons/md";
 
 export default function NavBar() {
     return (
         <>
-        <nav>
-            <ul className="flex space-x-4">
-            <li><Link href={'/'} className="text-gray-600 hover:text-gray-800">Home</Link></li>
-            <li><Link href={'/sobre'} className="text-gray-600 hover:text-gray-800">Sobre</Link></li>
-            <li><Link href={'/dicas'} className="text-gray-600 hover:text-gray-800">Dicas</Link></li>
-            </ul>
+        <nav className="flex justify-center">
+            <div className="flex gap-3">
+                <TextMenu texto="Home" href="/" icon={<FaHome />} />
+                <TextMenu texto="Sobre" href="/sobre" icon={<FaInfoCircle />} />
+                <TextMenu texto="Dicas" href="/dicas" icon={<FaConciergeBell />} />
+                <TextMenu texto="Contato" href="/contato" icon={<FaEnvelope />} />
+                <TextMenu texto="Galeria" href="/galeria" icon={<MdCollections />} />
+            </div>
         </nav>
         </>
     )
