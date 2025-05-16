@@ -6,6 +6,7 @@ import {
     FaInfoCircle,
     FaConciergeBell,
     FaEnvelope,
+    FaCode
   } from "react-icons/fa";
 
 import { MdCollections } from "react-icons/md";
@@ -20,6 +21,7 @@ export default function NavBar() {
                 <TextMenu texto="Dicas" href="/dicas" icon={<FaConciergeBell />} />
                 <TextMenu texto="Contato" href="/contato" icon={<FaEnvelope />} />
                 <TextMenu texto="Galeria" href="/galeria" icon={<MdCollections />} />
+                <TextMenu texto="Hooks" href="/hookPage" icon={<FaCode />} />
             </div>
         </nav>
         </>
