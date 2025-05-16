@@ -24,8 +24,8 @@ function useApi<T>(apiUrl: string): ApiResponse<T> {
         const json = await response.json();
         setData(json);
         setLoading(false);
-      } catch (e: any) {
-        setError(e.message);
+    } catch (e: unknown) {
+        setError((e as Error).message);
         setLoading(false);
       }
     };
